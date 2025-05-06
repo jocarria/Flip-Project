@@ -2,10 +2,108 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>¡Hola Flip!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FLIP - La nueva forma de capturar emociones y transformar decisiones.">
+  <title>FLIP - Feedback Redefinido</title>
+
+  <!-- Tipografía Lato -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>Mi primer sitio con GitHub Pages</h1>
-  <p>Publicado con ❤️ desde GitHub.</p>
+  <header>
+    <div class="logo">FLIP</div>
+    <nav>
+      <div class="menu-toggle">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h1>Captura emociones, transforma decisiones</h1>
+      <p>FLIP te ayuda a entender en tiempo real lo que sienten tus usuarios y a tomar mejores decisiones.</p>
+      <a href="#planes" class="btn-primary">Ver Planes</a>
+    </section>
+
+    <section class="pricing" id="planes">
+      <h2>Elige el plan perfecto para tu negocio</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <p class="price">U$D 19 / mes</p>
+          <ul>
+            <li>✓ Encuestas básicas</li>
+            <li>✓ Resultados en tiempo real</li>
+            <li>✓ Integración vía email</li>
+          </ul>
+          <a href="#contacto" class="btn-secondary">Comenzar</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Growth</h3>
+          <p class="price">U$D 49 / mes</p>
+          <ul>
+            <li>✓ Todo en Starter</li>
+            <li>✓ Integración con Slack</li>
+            <li>✓ Reportes mensuales</li>
+            <li>✓ Encuestas personalizadas</li>
+          </ul>
+          <a href="#contacto" class="btn-secondary">Comenzar</a>
+        </div>
+        <div class="pricing-card popular">
+          <div class="badge">Más Popular</div>
+          <h3>Pro</h3>
+          <p class="price">U$D 89 / mes</p>
+          <ul>
+            <li>✓ Todo en Growth</li>
+            <li>✓ Dashboard avanzado</li>
+            <li>✓ Exportación de datos</li>
+            <li>✓ Automatizaciones inteligentes</li>
+          </ul>
+          <a href="#contacto" class="btn-secondary">Comenzar</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <p class="price">Consultar</p>
+          <ul>
+            <li>✓ Todo en Pro</li>
+            <li>✓ API completa</li>
+            <li>✓ Integraciones CRM</li>
+            <li>✓ SLA 99.9% & Soporte dedicado</li>
+          </ul>
+          <a href="#contacto" class="btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h2>¡Hablemos!</h2>
+      <p>Agenda una demo o consulta por la mejor opción para tu empresa.</p>
+      <a href="#" class="btn-primary">Solicitar Demo</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 FLIP. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
