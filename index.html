@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FLIP - Captura emociones en tiempo real.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FLIP - Captura emociones en tiempo real." />
   <title>FLIP - Feedback Redefinido</title>
 
   <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png" />
   <!-- Estilos -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
 <header>
@@ -25,11 +24,11 @@
       <li><a href="#planes">Planes</a></li>
       <li><a href="#producto">Producto</a></li>
     </ul>
+    <button class="dark-toggle" id="darkToggle">🌙</button>
   </nav>
 </header>
 
 <main>
-
   <!-- Hero -->
   <section class="hero" id="inicio">
     <h1>Mide las emociones de tus usuarios en tiempo real.</h1>
@@ -92,7 +91,6 @@
   <section class="product" id="producto">
     <h2>¿Cómo funciona FLIP?</h2>
     <p>Conocé cómo capturamos emociones en tiempo real y cómo integramos la voz del cliente a tu negocio.</p>
-
     <div class="video-grid">
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/s_2FavJOX5E?si=Pa10iabLTQiihjOT" frameborder="0" allowfullscreen></iframe>
@@ -101,16 +99,14 @@
         <iframe src="https://www.youtube.com/embed/seJvld0wN6I?si=xVIY1duE9Kokli0X" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-
   </section>
-
 </main>
 
 <footer>
   <p>© 2025 FLIP. Todos los derechos reservados.</p>
 </footer>
 
-<!-- JavaScript -->
+<!-- JS: animación logo + menú móvil + toggle dark mode -->
 <script>
   window.addEventListener('load', () => {
     document.querySelector('.logo').classList.add('kickflip');
@@ -120,6 +116,11 @@
   const navLinks = document.querySelector('.nav-links');
   toggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+  });
+
+  const darkToggle = document.getElementById('darkToggle');
+  darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
   });
 </script>
 
